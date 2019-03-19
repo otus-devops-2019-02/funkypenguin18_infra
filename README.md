@@ -1,5 +1,5 @@
 # funkypenguin18_infra
 funkypenguin18 Infra repository
 
-РїРѕРґРєРСЋРµРЅРёРµ Рє someinternalhost РІ РѕРґРЅСѓ РєРѕРјР°РЅРґСѓ:  ssh -At olegdanilov@35.211.5.229 ssh 10.142.0.3
-(СЏ РґРѕР±Р°РІР»СЏР» С‚РµРєСѓС‰РёР№ РєР»СЋС‡)
+ЯЮФЪЫозХЭШХ Ъ someinternalhost Т ЮФЭг ЪЮЬРЭФг:  ssh -At olegdanilov@35.211.5.229 ssh 10.142.0.3
+(п ФЮСРТЫпЫ ЫЮЪРЫмЭлЩ ЪЫоз, ЭХ бЮЧФРТРп ЭЮТлЩ)
