@@ -18,3 +18,6 @@ Host someinternalhost 10.142.0.3
 
 bastion_IP = 35.211.5.229
 someinternalhost_IP = 10.142.0.3
+
+Let's encrypt for pritunl installed, check on: 
+https://35-211-5-229.sslip.io/login
