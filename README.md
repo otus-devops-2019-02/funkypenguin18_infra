@@ -24,8 +24,8 @@ someinternalhost_IP = 10.142.0.3
 Let's encrypt for pritunl installed, check on: 
 https://35-211-5-229.sslip.io/login
 
-testapp_ip = 34.65.55.223
-testapp_post = 9292
+testapp_IP = 34.65.55.223
+testapp_port = 9292
 
 команда для startup - script:
 ```
