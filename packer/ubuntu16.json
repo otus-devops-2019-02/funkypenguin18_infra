@@ -1,4 +1,12 @@
 {
+
+   "variables": 
+        {
+            "project_id": null,
+            "machine_type": "f1-micro",
+            "ssh_username": null,
+            "source_image_family": null
+        },
     "builders": [
         {
             "type": "googlecompute",

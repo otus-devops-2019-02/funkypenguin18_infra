@@ -1,0 +1,6 @@
+  {
+  "project_id": "penguin",
+  "source_image_family": "ubuntu-1604-lts",
+  "ssh_username": "appuser"
+}
+
