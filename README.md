@@ -73,3 +73,4 @@ gcloud compute firewall-rules create default-puma-server\
  --target-tags=puma-server \
  --description="Allow incoming traffic for puma-server"
 ```
+
