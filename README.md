@@ -24,6 +24,7 @@ someinternalhost_IP = 10.142.0.3
 Let's encrypt for pritunl installed, check on: 
 https://35-211-5-229.sslip.io/login
 
+Cloude-test
 testapp_IP = 34.65.55.223
 testapp_port = 9292
 
@@ -44,3 +45,5 @@ gcloud compute firewall-rules create default-puma-server\
  --target-tags=puma-server \
  --description="Allow incoming traffic for puma-server"
 ```
+=======
+
