@@ -1,4 +1,6 @@
 # funkypenguin18_infra
+
+# ДЗ №5 (packer-base)
 Packer:
 
 Создан базовый образ reddit-base на основании шаблона Ubuntu16.json
@@ -24,14 +26,14 @@ packer build -var-file variables.json ./ubuntu16.json
 Добавлен старт приложения с помощью systemd.
 
 Также в папку /config-scripts добавлен скрипт create-reddit-vm.sh с возможностью создания и запуска инстанса с помощью команды gcloud.
-=======
-funkypenguin18 Infra repository
 
+
+# HW №3 cloud-bastion
 
 Подключение к someinternalhost в одну команду:  ssh -i ~/.ssh/appuser -At appuser@35.211.5.229 ssh 10.142.0.3
 
 Для подключения из консоли командой ssh someinternalhost и ssh bastion
-необходимо внести следующие изменения в файл ~/.ssh/config 
+необходимо внести следующие изменения в файл ~/.ssh/config
 на локальном компьютере (создать в случае необходимости):
 
 ```
@@ -47,7 +49,7 @@ Host someinternalhost 10.142.0.3
 bastion_IP = 35.211.5.229
 someinternalhost_IP = 10.142.0.3
 
-Let's encrypt for pritunl installed, check on: 
+Let's encrypt for pritunl installed, check on:
 https://35-211-5-229.sslip.io/login
 
 Cloude-test
