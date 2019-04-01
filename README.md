@@ -1,5 +1,33 @@
 # funkypenguin18_infra
 
+# ДЗ №6 (terraform-1)
+
+Выполнено развертование ВМ на основе образа reddit-base при помощи инструмента Terraform.
+Конфигурационные файлы параметризованы при помощи переменных.
+
+### задание со *
+
+В метаданных дополнительно объявлен пользователь appuser1 при помощи:
+```
+metadata {
+   ssh-keys = "appuser:${file(var.public_key_path)}appuser1:${file(var.public_key_path)}"
+}
+```
+
+Для указания нескольких пользовательских ключей используется конструкция:
+```
+resource "google_compute_project_metadata_item" "default" {
+  key   = "ssh-keys"
+  value = "appuser1:${file(var.public_key_path)}appuser2:${file(var.public_key_path)}appuser3:${file(var.public_key_path)}"
+}
+```
+### Задание со ** - Баллансировка приложения
+Создан файл lb.tf в котором описано создание HTTP-балансировщика с помощью методов google_compute_forwarding_rule и google_compute_target_pool.
+
+Добавлен вывод ip-адреса балансировщика через переменную app_external_ip_lb
+
+Для уменьшения количества кода было принято решение увеличивать количество инстансов через каунтер.
+
 # ДЗ №5 (packer-base)
 Packer:
 
@@ -73,4 +101,3 @@ gcloud compute firewall-rules create default-puma-server\
  --target-tags=puma-server \
  --description="Allow incoming traffic for puma-server"
 ```
-
