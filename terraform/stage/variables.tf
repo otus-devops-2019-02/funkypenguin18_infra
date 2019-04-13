@@ -8,7 +8,6 @@ variable region {
 }
 
 variable public_key_path {
-
   description = "Path to the public key used for ssh access"
 }
 
@@ -18,15 +17,12 @@ variable private_key_path {
 
 variable app_disk_image {
   description = "Disk image for reddit app"
-  default = "reddit-app-base"
+  default = "reddit-app"
 }
 
 variable db_disk_image {
   description = "Disk image for reddit db"
-  default = "reddit-db-base"
-
-  # Описание переменной
-  description = "Path to the public key used for ssh access"
+  default = "reddit-db"
 }
 
 variable zone {
@@ -36,7 +32,5 @@ variable zone {
 
 variable count {
   description = "Instance counter"
-
   default     = 1
-
 }
