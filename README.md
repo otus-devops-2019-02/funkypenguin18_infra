@@ -40,6 +40,11 @@ appserver                  : ok=2    changed=1    unreachable=0    failed=0
 Задание со *
 
 Для генерации динамического inventory на лету написан скрипт inventory.py , выводящий список хостов для ansible в формате json.
+```
+python dynamic_invertory.py
+
+{"app": {"hosts": ["appserver"]}, "all": {"children": ["app", "db"]}, "db": {"hosts": ["dbserver"]}, "_meta": {"hostvars": {"appserver": {"ansible_host": "34.76.207.55"}, "dbserver": {"ansible_host": "35.240.39.153"}}}}
+```
 
 # ДЗ №7 (terraform-2)
 

@@ -10,8 +10,8 @@ j =json.loads(output)
 for i in j:
     app_ip = j['app_external_ip']['value']
     db_ip = j['db_external_ip']['value']
-print(app_ip)
-print(db_ip)
+#print(app_ip)
+#print(db_ip)
 
 out = {
     "_meta": {
