@@ -58,10 +58,10 @@
             version: monolith # <-- Указываем нужную ветку
           notify: restart puma
 
-         - name: Bundle install
-           bundler:
-             state: present
-             chdir: /home/appuser/reddit
+        - name: Bundle install
+          bundler:
+            state: present
+            chdir: /home/appuser/reddit
    
   handlers:
   - name: restart puma
